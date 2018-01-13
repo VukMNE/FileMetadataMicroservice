@@ -1,0 +1,30 @@
+{
+  "name": "filemetadatamicroservice",
+  "version": "1.0.0",
+  "description": "File Metadata Microservice - FreeCodeCamp Backend Challenge",
+  "main": "program.js",
+  "scripts": {
+    "start": "node program.js",
+    "test": "node program.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VukMNE/FileMetadataMicroservice.git"
+  },
+  "keywords": [
+    "File-size",
+    "File",
+    "Metadata"
+  ],
+  "author": "VukMNE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VukMNE/FileMetadataMicroservice/issues"
+  },
+  "homepage": "https://github.com/VukMNE/FileMetadataMicroservice#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "multer": "^1.3.0"
+  }
+}
