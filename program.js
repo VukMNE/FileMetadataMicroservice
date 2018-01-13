@@ -7,7 +7,13 @@ app.use(cors());
 app.use(express.static('./public'));
 
 app.post("/filesize", upload.single('file'), function( request, response){
-	response.send(getFileSize(request.file.size));
+	if(request.hasOwnProperty("file")){
+		response.send(getFileSize(request.file.size));
+	}
+	else{
+		noFile = { fileSize: "0 bytes"};
+		response.send(noFile);
+	}
 });
 
 app.listen(process.env.PORT || 5000);
